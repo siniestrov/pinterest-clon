@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root{
+   --red-g-color:red;
+   --grey-hover-color:#f0f0f0;
+   --black-g-color: black;
+   --gray-g-color: #111;
+   --gray-t-color: #393939;
+   --gray-bar-color: rgb(237, 237, 237);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navgral{
+    position: fixed;
+    width: 99%;
+    display: flex;
+    top: 0;
+    margin: 15px 15px;
+    align-self: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.text-nav{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.icon-pint{
+    display: inline-block;
+    color: white;
+    width: 50px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.icon-pint:hover{
+    background-color: var(--grey-hover-color);
+}
+
+.icon-sup{
+    display: inline-block;
+    color: white;
+    width: 45px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.icon-sup:hover{
+    background-color: var(--grey-hover-color);
+}
+
+.icon-sup2{
+    display: inline-block;
+    color: white;
+    width: 35px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.icon-sup2:hover{
+    background-color: var(--grey-hover-color);
+}
+
+.botton-header-black{
+    border: none;
+    background-color: var(--gray-g-color);
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.botton-header-white{
+    border: none;
+    background-color: white;
+    color: var(--gray-t-color);
+    font-size: 16px;
+    padding: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+
+/* Barra busqueda */
+
+
+.input-wrapper {
+	position: relative;
+	width: 100%;
+    margin-right: 20px;
+}
+
+.input {
+	box-sizing: border-box;
+    width: 100%;
+    background-color: var(--gray-bar-color);
+	color: #191919;
+	padding: 20px 20px 20px 40px;
+    border-radius: 30px;
+}
+
+
+.input-icon {
+	color: var(--gray-t-color);
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+figcaption {
+    display:none; 
+    transition: all .5s;
+  }
+  /* Visible texto */
+  figure:hover > figcaption {
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 12px;
+    color: white;
+    display:block;
+    position: absolute;
+    transition: all .5s;
+  }
+
+
+
+/* Galeria   */
+.img-galery{
+    max-width: 100%;
+    margin-bottom: 2em;
+    display: block;
+    border-radius: 15px;
+    
+}
+
+.gallery {
+    /* columns: 6 200px; */
+    columns: 200px;
+    column-gap: 1.5em;
+    margin: 100px 20px 0 20px;
+    cursor: pointer;
+
+}
+.galleryhover {
+    position: relative;
+  }
+
+.galleryhover:hover .overlay {
+    opacity: 1;
+  }
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: #00000080;
+    border-radius: 15px;
+  
+  }
+
+  .btn-bottom1{
+    position: absolute;
+    bottom: .5rem;
+    right: .6rem;
+  }
+
+  .btn-bottom2{
+    position: absolute;
+    bottom: .5rem;
+    right: 3.5rem;
+  }
+
+
+
+  .icon-m{
+    display: inline-block;
+    width: 18px;
+    margin-left: .4rem;
+
+}
+
+.txtw{
+    position: absolute;
+    color: white;
+    top: 1.8rem;
+    left: .8rem;
+
+}
+
+
+.botton-card{
+    position: absolute;
+    border: none;
+    width: 100px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 25px;
+    top: 1rem;
+    right: .6rem;
+}
+  
+
+.icon-card{
+    display: inline-block;
+    background-color: rgb(215, 215, 215);
+    color: white;
+    width: 35px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.icon-card:hover{
+    background-color: white;
+}
+ 
+
